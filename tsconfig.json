@@ -1,0 +1,21 @@
+{
+  "extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "module": "ES2022",
+    "typeRoots": ["./src/lib/types"],
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "outDir": "./dist",
+    "target": "ES2022"
+  },
+  "include": ["./src/lib/types/*.d.ts", "./src/**/*"]
+}
